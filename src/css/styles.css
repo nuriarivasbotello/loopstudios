@@ -3,6 +3,11 @@
 *::before {
   box-sizing: border-box;
 }
+:root {
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-alata: "Alata", sans-serif;
+  --color-white: white;
+}
 
 img {
   max-width: 100%;
@@ -28,13 +33,48 @@ body {
 }
 .header {
   position: relative;
-  display: flex;
+  height: 100vh;
   position: relative;
+
+  background-position: center;
+  background-size: cover;
+  background-image: url(../assets/images/mobile/image-hero.jpg);
+}
+.header-top {
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  padding: 40px;
 }
 .logo {
   width: 144px;
   height: 24px;
 }
+.main-menu {
+  width: 100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+  gap: 40px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-size: 30px;
+  font-family: var (--font-josefin);
+  color: rgb(154, 154, 154);
+  background-color: black;
+}
 .header__image {
+}
+.hide {
+  display: none;
+}
+.title {
+  margin: auto;
+  width: 327px;
+  height: 196px;
+  padding-left: 20px;
+  border: 5px white solid;
+  color: var(--color-white);
 }
