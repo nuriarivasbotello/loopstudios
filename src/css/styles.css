@@ -22,6 +22,19 @@ a {
 }
 
 body {
-  margin: 0;
-  background-color: #111;
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #eb8282;
+}
+.header {
+  position: relative;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+.logo {
+  width: 144px;
+  height: 24px;
+}
+.header__image {
 }
